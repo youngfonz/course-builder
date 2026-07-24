@@ -9,7 +9,7 @@ ends in an 8-question quiz.** Point it at any subject and it builds the whole
 thing in minutes.
 
 🌐 **Landing page:** https://johnbr0phy.github.io/course-builder/
-▶️ **A course it built (demo):** https://johnbr0phy.github.io/Workflows-course/
+▶️ **A course it built (demo):** https://johnbr0phy.github.io/Workflows/
 
 ---
 
