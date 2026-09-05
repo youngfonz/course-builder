@@ -107,8 +107,10 @@ hours went **up**. Two problems hide inside "build software": **making it work**
 and **making it land**. Almost every failure is the second one.
 
 ### Why It Matters
-Roughly 95% of AI pilots show no measurable business impact (MIT, 2025). Not
-because the model was bad. Because nobody decided where intelligence belonged,
+Roughly 95% of AI pilots show no measurable business impact (MIT, 2025). The
+labs know it: one lab promised to train tens of thousands of people to install
+AI inside companies; the interview behind this course reports 86 had actually
+trained. Not because the model was bad. Because nobody decided where intelligence belonged,
 nobody built for the unhappy paths, nobody owned the result. Your organisation
 has probably already bought one of these. You are going to build the other kind.
 
@@ -160,6 +162,15 @@ The honest costs: range instead of depth, less visible work, exposure when it
 fails. If that sounds bad, that's a fine answer, and you'll still finish this
 course knowing how to tell a good AI pilot from a doomed one.
 
+One more thing, and it's good news: **the industry you already know is the
+edge, not the obstacle.** A claims adjuster knows when an estimate is wrong; a
+kitchen manager knows which order is short before it arrives. The skill in this
+course travels to any industry, but you'll be most effective in the one whose
+unwritten rules you already carry. And you don't need to wait for a title:
+applied AI engineer, customer engineer, implementation engineer, technical
+deployment lead and AI operations are all the same work with a different
+technical balance.
+
 ### Apply to Your Work
 Under Session 2 in `MY_DEPLOYMENT.md`: the one-sentence version of your
 workflow's deployment, in the form "live and used by ___ to do ___." If you
@@ -177,7 +188,12 @@ have a target company or role, add it under **Target role or company**.
 ## Session 3 — Discovery: The Real Process, Not the Wiki Version
 
 ### Do This First
-Paste:
+Start with the files, not the people. Paste:
+```
+Read the NOTES column and the STS column in data/enrollment_export.csv. Classify what went wrong on every row that isn't clean: missing information, rule question, duplicate or sibling, waitlist, wrong program, something else. Count each type. Then, assuming each messy row costs Denise an extra 15 minutes, give me the rough hours lost per month if this is a typical five weeks. Napkin maths is fine.
+```
+Predict first: which type is most common? Paste the counts. That's your first
+leverage map. Now check it against reality. Paste:
 ```
 Read data/discovery_transcript.md. List every rule Denise follows that is NOT written down anywhere. Then list every place an enrollment email can arrive. Then tell me the one thing she asked for, in her own words.
 ```
@@ -205,8 +221,11 @@ Here are my discovery notes. Pull out: the unwritten rules, every input channel,
 ```
 
 ### What Just Happened
-The wiki says "parents enrol via the portal". Reality: forty senders, forwarded
-threads, and eleven years of rules in one head. **You sit in the room and watch
+You pulled the last forty instances, classified them, did rough maths, and then
+watched the person. Expect half your classifications to be wrong after the
+conversation; let reality change the assessment. The wiki says "parents enrol
+via the portal". Reality: forty senders, forwarded threads, and eleven years of
+rules in one head. **You sit in the room and watch
 someone do it the slow way, and you don't interrupt, because the reason they do
 it the slow way is usually load-bearing.**
 
@@ -220,8 +239,11 @@ Asking versus watching. People describe the process they think they follow.
 Watching shows the one they actually follow. When you can only do one, watch.
 
 ### Apply to Your Work
-Fill in the top of `MY_DEPLOYMENT.md`: what the workflow is, a concrete recent
-instance (de-identified), inputs, output, volume, minutes per item, owner.
+Pull the **last 10–20 instances** of your workflow (de-identified). Ask Claude
+Code to classify what went wrong and count. Then fill in the top of
+`MY_DEPLOYMENT.md`: what the workflow is, a concrete recent instance, inputs,
+output, volume, minutes per item, owner. By the end of Session 5 you should be
+able to say "this is how much work I'll save and why" before anything is built.
 
 ### Check bank
 - Predict: what does Denise say is the worst part? (Not the retyping.) Check.
@@ -286,7 +308,10 @@ Before you look, pick your own three. Paste both.
 
 ### What Just Happened
 Requests 2 and 3 (extract the fields, flag the rule-breakers) save most of the
-time with **low authority** and **no migration**. Request 4 (replace the system)
+time with **low authority** and **no migration**. This is **leverage**: the same
+month of building can remove hundreds of hours of waiting, or make a rare edge
+case slightly better. Pick the delay that happens often enough to matter and
+unblocks the work behind it. Request 4 (replace the system)
 and 9 (auto-approve and confirm) are quarter-eaters or hand the AI Denise's
 name. You just **decided where intelligence belongs: the smallest build that
 moves the most work with the least model authority.**
@@ -306,6 +331,8 @@ not past it. Two systems disagreeing is normal; pick the one people act on.
 Fill the **Where intelligence belongs** section of `MY_DEPLOYMENT.md`: the
 smallest build, what it decides, what it never does alone, who clicks send.
 Write the requests you're refusing and why. You'll need that list in Session 11.
+Add one more line: **what data the agent does not need to see.** Denise's agent
+needs the email, not fee-waiver letters or anything medical. Lock off the rest.
 
 ### Check bank
 - Predict which request Denise would veto hardest (9), then ask Claude Code to
@@ -321,7 +348,7 @@ Write the requests you're refusing and why. You'll need that list in Session 11.
 ### Do This First
 One model, one platform, zero switching for the rest of the course. Paste:
 ```
-Build me a small tool in this folder called the Enrollment Agent. When I give it the path to one email in data/intake_emails/, it should: read the email, pull out child's name, date of birth, grade, program, site and guardian phone, decide which program code (ASP, TN or SUM) and site code (RB1 or RB2) apply, and write a new row in the same format as data/enrollment_export.csv to a file called output/proposed_rows.csv. It must NOT edit enrollment_export.csv and must NOT send anything. Describe what you're going to build in five plain lines before you build it. Don't show me code.
+Build me a small tool in this folder called the Enrollment Agent. When I give it the path to one email in data/intake_emails/, it should: read the email, pull out child's name, date of birth, grade, program, site and guardian phone, decide which program code (ASP, TN or SUM) and site code (RB1 or RB2) apply, and write a new row in the same format as data/enrollment_export.csv to a file called output/proposed_rows.csv. It must NOT edit enrollment_export.csv and must NOT send anything. It should only read the one email I give it, not the whole export or any other file, unless I say so. Describe what you're going to build in five plain lines before you build it. Don't show me code.
 ```
 Read the five lines. If they match what you meant, say `go`. Then:
 ```
@@ -474,7 +501,9 @@ survives a budget meeting. "It seems to help" does not.
 
 ### Key Tradeoff
 Celebrating the pass rate versus investigating the failures. The pass rate is
-for the slide. The failures are for you. Never invent eval cases from
+for the slide. The failures are for you. And be ambitious about the number: if
+the workflow could give back 200 hours a month and yours gives back 20, don't
+celebrate, look at why. Never invent eval cases from
 imagination when you have real examples; real ones find real bugs.
 
 ### Apply to Your Work
@@ -498,11 +527,19 @@ Make the Enrollment Agent easy for someone who isn't me to use: a one-page HOW_T
 ```
 Paste the five-deaths result. Then the real step, on **your** tool:
 
-1. Put your tool in the hands of **one colleague** who does the workflow.
-2. Sit with them for the first three items. Don't touch the keyboard.
-3. Agree the number you'll both look at in a week: hours, errors caught, or
+1. Have the **IT conversation** before anyone uses it. Ask Claude Code:
+```
+Write me five plain-English questions to ask whoever looks after our systems before a colleague uses this tool on real work: where the data lives and who's allowed to see it, what logins it needs, what it must never touch, who has to say yes, and how we switch it off. Add the one-line answer I should already know for each, based on what we've built.
+```
+   Take those questions to the person who owns your systems. Every real
+   deployment hits this wall; walking in with the questions is the difference
+   between a yes and a six-week silence.
+2. Put your tool in the hands of **one to three colleagues** who do the workflow.
+3. Sit with them for the first three items each. Don't touch the keyboard.
+   Watch where they hesitate; that's your next fix.
+4. Agree the number you'll all look at in a week: hours, errors caught, or
    days recovered.
-4. Ask Claude Code:
+5. Ask Claude Code:
 ```
 Write a one-line weekly check-in I can send my colleague every Friday asking for: items processed, items they had to fix, and time it took. Plain, friendly, short.
 ```
@@ -546,6 +583,10 @@ Draft a one-page writeup of the Riverbend Enrollment Agent for a director who ha
 Paste the draft. Read it as the director. Cut anything they'd skip. Then:
 ```
 Plan a five-minute live demo. It must go THROUGH at least two unhappy paths (the missing attachment and the counsellor thread), not around them. Give me a minute-by-minute script in plain English and the one sentence to open with.
+```
+Then the impact statement, in one breath. Fill in the blanks and say it out loud:
+```
+I came in, I sat down, I saw how real people did ___. I mapped where it broke. I built ___ to fix the biggest one. I put it into production with ___ using it, and it's now saving ___ a week.
 ```
 Then a rehearsal, FDE-interview style. Ask Claude Code:
 ```
@@ -617,7 +658,9 @@ for five minutes without a slide.
 
 ### Key Tradeoff
 Stop here, or go again. The second deployment takes half the time, because the
-judgment transfers. Pick the next workflow the same way: the one that annoys
+judgment transfers. And you didn't wait for a title. You found the piece of
+work, showed it could be solved, and owned it. That is how people get the
+title. Pick the next workflow the same way: the one that annoys
 someone weekly and has an owner who'll let you build on it.
 
 ### Apply to Your Work

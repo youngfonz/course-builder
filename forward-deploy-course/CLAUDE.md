@@ -156,7 +156,9 @@ sittings rather than rushing.
 - Data rule and authority rule above, in every exercise.
 - Never present the MIT figure as more than "roughly 95% of pilots show no
   measurable business impact (MIT, 2025)".
-- Don't quote salary figures as fact; `SOURCE.md` §4 explains why.
+- Don't quote salary figures as fact; `SOURCE.md` §4 explains why. The "86
+  trained" figure and the 400,000-session study are the source interview's
+  claims (`SOURCE.md` §6); say "the interview reports" when you use them.
 - Don't let the learner pick a workflow they don't own or that needs a
   migration. Death #2 and death #4 start at setup.
 - If the learner asks you to build something outside the course (a whole new

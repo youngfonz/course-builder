@@ -14,6 +14,7 @@ business. Find yours in the table, then notice it's the same loop.
 | **Hospitality** | Booking changes, group requests, complaint emails, OTA messages | Which guest to upgrade; which complaint is going to become a review | The PMS, the housekeeping list | Rooms turned per hour; review score; refunds |
 | **Security services** | Shift-cover requests, incident reports, client site changes | Which post can't go unfilled; which report needs a phone call not an email | The roster, the incident log | Unfilled shifts; overtime; incidents escalated late |
 | **Nonprofit / community** | Enrollment emails, volunteer applications, grant reminders | Which "duplicate" is a sibling; which counsellor email is a situation | The enrollment export, the CRM | Coordinator hours; forms missing; waitlist errors |
+| **Insurance** | Claim packets: estimates, photos, reports, and the signature page that isn't there | Which estimate is wrong; which claim is fraud; which file is only missing a document | The claims system | Days a claim sits before anyone notices it's incomplete; adjuster hours |
 | **Healthcare admin** | Referral faxes, appointment requests, insurance queries | Which referral is urgent; which patient will no-show | The scheduling system | Days to first appointment; no-shows; rebooks |
 | **Real estate / property** | Maintenance requests, applicant emails, lease questions | Which leak is an emergency; which applicant will fall through | The work-order system, the applicant tracker | Days to repair; vacancy days; callbacks |
 | **Retail / e-commerce** | Returns, "where's my order", supplier stock emails | Which return is fraud; which stockout matters this week | The order system, the returns log | Tickets per day; refund rate; stockouts |
@@ -27,3 +28,8 @@ business. Find yours in the table, then notice it's the same loop.
 
 The Riverbend files are the worked example you compare against. Yours is the
 one that ships.
+
+**Stay in your lane, on purpose.** The skill travels to any industry. You are
+most dangerous in the one whose unwritten rules you already know. A claims
+adjuster knows when an estimate is wrong in four seconds. That knowledge is the
+edge; the course just teaches you where to point it.

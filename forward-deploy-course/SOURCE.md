@@ -237,7 +237,104 @@ Guide*; Perspective AI interview guides.
   evaluation, over-promising in the role-play, preparing as if for a LeetCode
   interview.
 
-## 6. Course-specific facts (this program)
+## 6. The 30-day project, as taught in the source interview
+
+Source: Nate B Jones, *OpenAI Pays $280,000 For This Job. You Don't Have To Be
+An Engineer* (AI News & Strategy Daily, 23 Aug 2026,
+youtube.com/watch?v=0bLI31EFDDs). This is the interview the roadmap's
+statistics come from. Claims below are his unless marked otherwise.
+
+### 6.1 The gap
+- Anthropic said it would train tens of thousands of engineers to install AI
+  inside banks, airlines and insurers; he reports that 86 had actually trained.
+  Quote as "the video reports 86", not as a verified figure.
+- OpenAI posts FDE at up to $280K base plus equity; Handshake at $300K.
+- "AI is a general-purpose capability and the last mile in AI is really hard.
+  FDEs bridge that gap."
+
+### 6.2 The Maya story (the worked example behind the roadmap)
+- Maya runs claims operations at a regional insurer. The CEO wants claims
+  processed twice as fast. That is not a buildable job.
+- She pulls **actual files**: one claim that cleared intake in a day and one that
+  sat for a week. In the slow one, the repair estimate arrived Tuesday but the
+  **signature page was missing** and nobody noticed until Friday. Three days gone
+  before any decision.
+- Rough math: a few thousand claims a month, 600–700 incomplete, several days
+  lost each: **roughly 1,800–2,000 days of claims sitting still every month.**
+  The information needed to flag it already exists in the packet.
+- **Leverage**: the point where a relatively small build moves the largest
+  amount of work without giving the model a dangerous amount of authority. The
+  service only notices the file is incomplete, points to the missing item, and
+  prepares the communication. Injury decisions and fraud stay with people.
+- "The same month of engineering can remove 1,800 days of waiting or make a
+  rare edge case slightly better."
+
+### 6.3 Three parts of the job, and where each background starts
+1. Understand the business well enough to find the leverage point.
+2. Build and inspect the system.
+3. Stay after launch long enough to learn whether people use it and whether the
+   result is worth the cost.
+
+Engineers usually have part 2 and struggle to get close enough to the customer
+for part 1. Operations, product and consulting people usually have part 1 and
+need to get technical enough to build, inspect and know where it fails.
+Solutions and implementation people sit in the middle; their test is whether
+they stay responsible after the traditional handoff.
+
+### 6.4 How to start: pull the last ten
+- Don't dig into a whole job. **Pull the last 10–20 instances** of the problem,
+  classify what went wrong, count, and do rough math. "You don't need a perfect
+  financial model. You need enough evidence."
+- Then **sit next to the person doing the work.** Much of what they do is not on
+  the official process. Expect half your ten pain points to be wrong after you
+  watch. Let reality change the assessment.
+- By the end of week two you should be able to say: this is how much work I'm
+  going to save, this is what I'm doing, this is why it matters, and this is how
+  I'm securing the guardrails. "The point is to keep you from asking AI to
+  invent a product before you understand the real person."
+
+### 6.5 Domain knowledge is the edge
+- A claims adjuster knows when an estimate is wrong; a finance operator knows
+  when two reports share a name but not numbers; a support lead knows the one
+  sentence that means "get a human now." You can't substitute for that.
+- He cites a study of roughly 400,000 Claude Code sessions: people rated as
+  experts in the task reached verified success more than twice as often as
+  novices, and non-technical users' code quality came within a few points of
+  technical users'. (Quote as "a study he cites"; the course did not verify it.)
+- "If you're deep in healthcare, don't try to jump over." Bring the industry you
+  already know. DXC's plan to certify existing engineers by industry is the
+  same idea.
+- You don't need to wait for a title. Find the piece of work, show you can
+  solve it with AI, and the title follows. Adjacent titles that carry the same
+  work with a different technical balance: applied AI engineer, customer
+  engineer, solutions engineer, implementation engineer, technical deployment
+  lead, AI operations, AI product.
+
+### 6.6 Building responsibly
+- **Least privilege**: Maya's service needs the intake documents, not payment
+  or medical history. Lock off what the model doesn't need.
+- **Evals** are a key engineering skill that has nothing to do with code: 50
+  correctly adjudicated examples ("missing documents" / "not missing") as the
+  test set.
+- Enterprise deployments always hit the same wall: getting access to the data,
+  understanding the policy nobody wrote down, fitting the tool into how people
+  actually work, and the first complaint from a real user. Take **permissions,
+  data access, authentication and IT expectations** seriously even in an
+  exercise; you will have to explain those decisions.
+- Ambition: if AI could save 2,000 hours a month and yours saves 20, look at
+  the causes. "You need to demand and expect" the larger number.
+
+### 6.7 The four weeks, his version
+Week 1: pull real work, reconstruct what happened, classify, find leverage.
+Week 2: sit next to the person; napkin math; state the impact before building.
+Week 3: build the simplest solution with an AI agent; run it against the old
+cases, clean and ugly; look at failures; rerun after every meaningful change.
+Week 4: **let two or three people use it while you watch**; learn; fix the loop.
+Then summarise: "I came in, I sat down, I saw how real people worked. I mapped
+out the problems. I built this to fix it. I put it into production and got it to
+work." Experienced people speedrun this in days.
+
+## 7. Course-specific facts (this program)
 
 - **Audience:** non-technical people in any industry: owners, operators,
   front-line staff, admins, leaders. The skill is industry-agnostic; see
