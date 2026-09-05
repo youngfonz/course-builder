@@ -29,10 +29,16 @@ jobs:
         with:
           enablement: true
 
+      - name: Assemble site (landing page + course homepage)
+        run: |
+          mkdir -p _site/forward-deploy-course
+          cp -r docs/. _site/
+          cp -r forward-deploy-course/. _site/forward-deploy-course/
+
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./docs
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
