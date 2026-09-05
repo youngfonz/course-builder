@@ -1,7 +1,8 @@
-# Forward Deploy: The FDE Program for Staff
+# Forward Deploy: The FDE Program
 
-A self-paced, **hands-on** program that teaches non-technical staff to do the
-Forward Deployed Engineer job on one real workflow in their own organisation:
+A self-paced, **hands-on** program that teaches non-technical people in **any
+industry** to do the Forward Deployed Engineer job on one real workflow in their
+own business or organisation:
 understand the business reality, decide where intelligence belongs, build it
 with Claude Code (no code written by you), make it survive failure, measure it,
 ship it to a colleague, and defend it to a director. Claude Code is your
@@ -9,6 +10,11 @@ instructor and your builder.
 
 Built on the **Forward Deploy** series and 30-day roadmap by Fonz Morris
 (Beyond Code Collective): forwarddeploy.fonz.sh · YouTube: Forward Deploy.
+
+The skill is bigger than any industry. Construction, automotive, restaurants,
+hospitality, security, healthcare admin, nonprofits, retail: the loop is the
+same. Requests arrive messy, someone with judgment decides, a record gets
+updated. See `data/OTHER_INDUSTRIES.md` for your row.
 
 ## What you walk away with
 
@@ -65,7 +71,7 @@ Then, any time:
 
 - A laptop you can install software on, and a paid Claude plan (claude.ai)
 - One workflow you do or watch every week, with an owner who'll let you build on it
-- A supervisor who'll approve a de-identified data sample (Session 4 onward)
+- Someone who'll approve a de-identified data sample (Session 4 onward); if it's your business, that's you
 - About 13 hours over 5 weeks, plus 15 minutes with a colleague in week 1
 
 ## For facilitators and sponsors
@@ -87,12 +93,12 @@ forward-deploy-course/
 ├── SOURCE.md              ← canonical source material, cited
 ├── RUBRIC.md              ← capstone rubric + completion criteria
 ├── FACILITATOR_GUIDE.md   ← running a staff cohort
-├── data/                  ← synthetic practice data (Riverbend Youth Center)
+├── data/                  ← synthetic practice data (one worked example) + OTHER_INDUSTRIES.md
 └── templates/             ← user.json, progress.json, PROGRESS.md, MY_DEPLOYMENT.md
 ```
 
 ## The data rule
 
-No real personal data about members, families, donors or staff goes into
+No real personal data about customers, clients, members, employees or anyone else goes into
 Claude Code during this program. The practice data is synthetic. Your own
-exercises use a de-identified sample your supervisor approved.
+exercises use a de-identified sample that whoever owns the data has approved.

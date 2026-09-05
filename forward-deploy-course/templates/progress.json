@@ -1,5 +1,5 @@
 {
-  "course": "Forward Deploy: The FDE Program for Staff",
+  "course": "Forward Deploy: The FDE Program",
   "version": 1,
   "current_session": 0,
   "_comment": "One entry per session, matching LESSONS.md. status: not_started | in_progress | completed. checks holds predict-then-run outcomes.",

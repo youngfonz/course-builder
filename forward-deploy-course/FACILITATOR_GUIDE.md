@@ -1,6 +1,7 @@
-# FACILITATOR_GUIDE.md — Running a Staff Cohort
+# FACILITATOR_GUIDE.md — Running a Cohort
 
-> For the person running the program internally. Learners never need this
+> For the person running the program, inside one organisation or across a
+> mixed group from different industries. Learners never need this
 > file. It covers the cohort schedule, what you do each week, where people get
 > stuck, and how to report results to leadership.
 
@@ -31,13 +32,17 @@ The deployment needs a week in someone else's hands before demo day.
 
 ## Before the cohort starts
 
-1. **Get sponsor sign-off on the data rule.** Nobody puts real personal data
-   about members, families, donors or staff into Claude Code. Each learner's
-   supervisor approves the de-identified sample they will use from Session 6.
+1. **Get sign-off on the data rule.** Nobody puts real personal data
+   about customers, clients, members, employees or anyone else into Claude
+   Code. Whoever owns each learner's data approves the de-identified sample
+   they will use from Session 6.
 2. **Pick the workflows with people, not for them.** The best running example is
    one the learner does or watches every week, that annoys them, and that has a
    clear owner who will let them build on it. Reject anything that needs a new
-   system or touches payroll, safeguarding records or legal matters.
+   system or touches payroll, protected records (health, safeguarding, legal)
+   or anything regulated the learner doesn't control.
+   Mixed-industry cohort? That's a feature. A contractor and a restaurant
+   manager will spot each other's load-bearing rules faster than colleagues do.
 3. **Confirm plans and machines.** Each learner needs a paid Claude plan and a
    laptop they can install software on. Sort IT permissions before week 0.
 4. **Book demo day now**, with the sponsor in the room. It makes week 4 real.

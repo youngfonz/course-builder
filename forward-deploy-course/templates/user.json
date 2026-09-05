@@ -2,6 +2,7 @@
   "name": "",
   "role": "",
   "organisation": "",
+  "industry": "",
   "background": "",
   "_comment": "The running example is one real workflow in the learner's organisation that is done the slow way today. Capture it richly: a concrete recent instance, its inputs, its output, and where it is weak. Never store real personal data here.",
   "workflow": "",

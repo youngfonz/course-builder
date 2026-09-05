@@ -1,4 +1,4 @@
-# My Progress — Forward Deploy: The FDE Program for Staff
+# My Progress — Forward Deploy: The FDE Program
 
 > Checkmark view of your journey. The instructor updates this after each session.
 > `[ ]` not started · `[~]` in progress · `[x]` completed

@@ -1,4 +1,4 @@
-# LESSONS.md — Forward Deploy: The FDE Program for Staff
+# LESSONS.md — Forward Deploy: The FDE Program
 
 > Full session plans for all 13 sessions (0–12). The instructor (`CLAUDE.md`)
 > runs one session at a time, gives one step, and waits for the learner to paste
@@ -8,9 +8,11 @@
 Matters · Key Tradeoff · Apply to Your Work · Check bank.
 
 **Guardrails the instructor enforces in every exercise:**
-- **Data rule.** No real personal data about members, families, donors or staff
-  goes into Claude Code. Use `data/` (synthetic) or a de-identified sample the
-  learner's supervisor approved. Pasted text is sent to Anthropic's servers.
+- **Data rule.** No real personal data about customers, clients, members, employees or anyone else
+  goes into Claude Code. Use `data/` (synthetic) or a de-identified sample
+  whoever owns the data has approved.
+- **Any industry.** Riverbend is a worked example. Every "Apply to Your Work"
+  uses the learner's own industry and vocabulary (`data/OTHER_INDUSTRIES.md`). Pasted text is sent to Anthropic's servers.
 - **Authority rule.** The agent drafts, decides and logs. It never sends emails,
   deletes anything, or changes a system of record on its own. A human clicks send.
 - **No code.** The learner never reads or writes code. Claude Code builds; the
@@ -53,7 +55,7 @@ Matters · Key Tradeoff · Apply to Your Work · Check bank.
    You should get a reply. Paste it here.
 5. Read the data rule out loud, then confirm you accept it:
    ```
-   I accept the data rule: no real personal data about members, families, donors or staff goes into Claude Code during this course.
+   I accept the data rule: no real personal data about customers, clients, members, employees or anyone else goes into Claude Code during this course.
    ```
 
 ### What Just Happened
@@ -71,8 +73,10 @@ Desktop app is easier; terminal is what most engineers use and what your
 target companies expect. Either works for every session. Switch later if you like.
 
 ### Apply to Your Work
-The instructor now runs first-time setup: your name, role, a 1–5 comfort rating,
-and the one workflow you'll build on. Nothing personal about anyone else.
+The instructor now runs first-time setup: your name, role, industry, a 1–5
+comfort rating, and the one workflow you'll build on. Then find your industry's
+row in `data/OTHER_INDUSTRIES.md`: the loop you're about to practise on a youth
+center is the same loop in your business.
 
 ### Check bank
 - Predict: if you paste a real member's name into Claude Code, where does it go?
@@ -194,7 +198,7 @@ If they have ten more minutes, add the two best prompts from `HOMEWORK.md`:
 6. What's a call you make in four seconds that would take someone new an hour to get wrong?
 ```
 
-Type up what they said (no names of members or families) and paste it into
+Type up what they said (no real names) and paste it into
 Claude Code with:
 ```
 Here are my discovery notes. Pull out: the unwritten rules, every input channel, the time per item, and the one thing they asked for. Keep it to ten lines.
@@ -257,8 +261,8 @@ eats a quarter. FDEs build on top of what exists and make the agent tolerate
 the mess. Never propose a migration.
 
 ### Apply to Your Work
-Get a **de-identified** sample of your workflow's data (your supervisor approves
-it). Ask Claude Code to explain its columns and list its inconsistencies. Write
+Get a **de-identified** sample of your workflow's data (whoever owns the data
+approves it; if it's your business, that's you). Ask Claude Code to explain its columns and list its inconsistencies. Write
 the three ugliest under Session 4 in `MY_DEPLOYMENT.md`.
 
 ### Check bank

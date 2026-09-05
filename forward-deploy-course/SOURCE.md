@@ -239,16 +239,18 @@ Guide*; Perspective AI interview guides.
 
 ## 6. Course-specific facts (this program)
 
-- **Audience:** non-technical staff. The learner never writes code. Claude Code
+- **Audience:** non-technical people in any industry: owners, operators,
+  front-line staff, admins, leaders. The skill is industry-agnostic; see
+  `data/OTHER_INDUSTRIES.md`. The learner never writes code. Claude Code
   builds; the learner directs, checks, decides and owns.
 - **Practice environment:** Claude Code, opened in this course folder.
-- **Running example:** one real workflow in the learner's organisation that is
+- **Running example:** one real workflow in the learner's business or organisation that is
   done the slow way today. Captured in `MY_DEPLOYMENT.md`. Optionally, one
   target company or role the learner is aiming at.
-- **Data rule:** real personal data about members, families, donors or staff
+- **Data rule:** real personal data about customers, clients, members, employees or anyone else
   never goes into Claude Code during this course. Shipped data in `data/` is
-  synthetic. Own-workflow exercises use a de-identified sample approved by the
-  learner's supervisor. Anything pasted into Claude Code is sent to Anthropic's
+  synthetic. Own-workflow exercises use a de-identified sample approved by
+  whoever owns the data (the learner, if it's their business). Anything pasted into Claude Code is sent to Anthropic's
   servers for processing.
 - **Authority rule:** during this course the agent drafts, decides and logs. It
   never sends, deletes or changes a system of record on its own. A human clicks

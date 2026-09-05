@@ -1,6 +1,8 @@
 # Practice data (all synthetic)
 
-Everything in this folder is **made up**. No real members, families, donors or
+Everything in this folder is **made up**. The scenario is a youth center only
+because you need one concrete example; the loop is the same in any industry.
+See `OTHER_INDUSTRIES.md` for yours. No real members, families, donors or
 staff. Names, phone numbers and emails are fictional. Use it freely in every
 exercise; it exists so you can see real output in minute one without touching
 anything sensitive.
@@ -23,6 +25,7 @@ per request, 40-odd senders, forwarded threads everywhere.
 | `intake_emails/` | Sessions 6–9 | Eight enrollment emails, from clean to chaotic |
 | `program_rules.md` | Session 7 | Denise's rules, written down for the first time |
 | `eval_cases.csv` | Session 9 | Twenty starter test cases with expected decisions |
+| `OTHER_INDUSTRIES.md` | Setup, every session | The same loop in ten industries; find your row |
 
 Rule for the whole course: **never paste real personal data into Claude Code.**
 When you move from this data to your own workflow, use a de-identified sample

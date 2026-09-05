@@ -3,7 +3,7 @@
 > Seven prompts. Do them the night before the cohort starts; twenty minutes, on
 > paper or in a note. Bring the answers to setup and the instructor will use
 > them to capture your workflow, so setup takes five minutes instead of twenty.
-> Be honest and be specific. No names of members, families, donors or staff.
+> Be honest and be specific. No names of real people.
 
 1. **The Sunday night list.** What's the task that eats your week that you'd
    never put on a job description? The thing you do because if you don't do it,
@@ -18,19 +18,20 @@
    and how long does one take?
 
 4. **The thing you know.** What's a judgment call you make in about four
-   seconds that would take someone new an hour to get wrong? (Spotting the
-   enrollment that's really a safeguarding call, knowing which "duplicate" is a
-   sibling, reading which grant report is going to go sideways.)
+   seconds that would take someone new an hour to get wrong? (Bidding instinct,
+   reading a sub, spotting the car that's coming back, the table that's going
+   to complain, the shift that can't go unfilled, the email that's really a
+   phone call.)
 
-5. **The question you answer every week.** What do staff, families, or
-   partners ask you over and over that you've explained a hundred times?
+5. **The question you answer every week.** What do staff, customers, clients,
+   crew or partners ask you over and over that you've explained a hundred times?
 
 6. **The expensive lesson.** Think of a time something cost real money, real
    hours, or real sleep. What information would you have needed, and when,
    to avoid it?
 
-7. **What you already tried.** Any software, app, or system your organisation
-   bought or tested that didn't stick? What went wrong: price, complexity,
+7. **What you already tried.** Any software, app, or system you or your
+   business bought or tested that didn't stick? What went wrong: price, complexity,
    nobody used it, wasn't built for how you actually work?
 
 Two more, quick:
