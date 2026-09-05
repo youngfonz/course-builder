@@ -92,7 +92,8 @@ forward-deploy-course/
 ├── LESSONS.md             ← full plans for all 13 sessions
 ├── SOURCE.md              ← canonical source material, cited
 ├── RUBRIC.md              ← capstone rubric + completion criteria
-├── FACILITATOR_GUIDE.md   ← running a staff cohort
+├── FACILITATOR_GUIDE.md   ← running a cohort
+├── LEADERSHIP_BRIEF.md    ← one-page proposal for sponsors
 ├── data/                  ← synthetic practice data (one worked example) + OTHER_INDUSTRIES.md
 └── templates/             ← user.json, progress.json, PROGRESS.md, MY_DEPLOYMENT.md
 ```
