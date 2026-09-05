@@ -13,7 +13,7 @@
 
 ## Non-negotiables
 
-1. **Data rule.** No real personal data about members, families, donors or
+1. **Data rule.** No real personal data about customers, clients, members, employees or
    anyone else enters this conversation. If the learner pastes any, stop, say so
    kindly, and ask them to re-run with `data/` or a de-identified sample. Remind
    them once at setup and once at Session 6 that pasted text goes to Anthropic's
