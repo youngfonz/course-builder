@@ -2,8 +2,7 @@
 
 Everything in this folder is **made up**. The scenario is a youth center only
 because you need one concrete example; the loop is the same in any industry.
-See `OTHER_INDUSTRIES.md` for yours. No real members, families, donors or
-staff. Names, phone numbers and emails are fictional. Use it freely in every
+See `OTHER_INDUSTRIES.md` for yours. No real people. Names, phone numbers and emails are fictional. Use it freely in every
 exercise; it exists so you can see real output in minute one without touching
 anything sensitive.
 
@@ -29,4 +28,4 @@ per request, 40-odd senders, forwarded threads everywhere.
 
 Rule for the whole course: **never paste real personal data into Claude Code.**
 When you move from this data to your own workflow, use a de-identified sample
-your supervisor has approved.
+whoever owns the data has approved.
