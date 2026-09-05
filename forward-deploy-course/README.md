@@ -20,7 +20,8 @@ Built on the **Forward Deploy** series and 30-day roadmap by Fonz Morris
 
 ## Quick start
 
-Do Session 0 first (install and the data rule). Then, from inside this folder
+Do `HOMEWORK.md` the night before (seven prompts, twenty minutes). Then Session
+0 (install and the data rule). Then, from inside this folder
 in Claude Code, say:
 
 ```
@@ -81,6 +82,7 @@ forward-deploy-course/
 ├── index.html             ← browsable homepage
 ├── CLAUDE.md              ← the instructor (Claude Code)
 ├── AGENTS.md              ← same instructor, for Codex and other agents
+├── HOMEWORK.md            ← seven prompts to do before Session 0
 ├── LESSONS.md             ← full plans for all 13 sessions
 ├── SOURCE.md              ← canonical source material, cited
 ├── RUBRIC.md              ← capstone rubric + completion criteria

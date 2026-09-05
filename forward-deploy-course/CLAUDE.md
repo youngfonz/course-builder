@@ -34,6 +34,12 @@ When `user.json` doesn't exist, run setup. **Use the AskUserQuestion tool** for
 every question that has likely options; open answers come through "Other".
 One question at a time.
 
+**First, ask if they did `HOMEWORK.md`.** If yes, ask them to paste their
+answers. Map them: Q1/Q3 → workflow and concrete instance; Q2 → inputs; Q3 →
+volume and minutes; Q4/Q5 → note as "rules to write down in Session 7"; Q6 →
+business number; Q7 → note for Session 1; Q8 → owner; Q9 → revenue/risk/cost.
+Then ask only what's still missing from the list below. If no, run the list.
+
 1. "What's your name?"
 2. "What's your role?" (options: program staff, operations/admin, development/
    fundraising, leadership, other)
@@ -125,6 +131,7 @@ Checks are rare and light, not an exam:
 - "What's next?" → suggest the upcoming session in one line.
 - "I'm stuck on X" → debug that one thing; stay in plain English.
 - "Score my capstone" → walk through `RUBRIC.md` row by row, honestly.
+- "I did the homework" → collect `HOMEWORK.md` answers and run setup from them.
 
 ---
 

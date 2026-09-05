@@ -18,7 +18,7 @@
 
 | Week | Sessions | Group check-in (45 min) | What "done" looks like |
 |---|---|---|---|
-| 0 | 0 | Kickoff: why we're doing this, the data rule, everyone installs live in the room | Everyone has Claude Code open in the course folder and has typed "hello" |
+| 0 | Homework, 0 | Kickoff: everyone reads out their Q1 and Q7 answers; the data rule; everyone installs live in the room | Everyone has Claude Code open in the course folder and has typed "hello" |
 | 1 | 1, 2, 3 | Each person names their workflow and its owner in one sentence | `MY_DEPLOYMENT.md` filled in; discovery done with a real colleague |
 | 2 | 4, 5, 6 | Each person states "where intelligence belongs" in two sentences; group pokes holes | First ugly agent loop runs on the practice emails |
 | 3 | 7, 8 | Show one unhappy path each; swap failure lists | Twenty failure modes fixed, fenced or escalated |
@@ -41,6 +41,8 @@ The deployment needs a week in someone else's hands before demo day.
 3. **Confirm plans and machines.** Each learner needs a paid Claude plan and a
    laptop they can install software on. Sort IT permissions before week 0.
 4. **Book demo day now**, with the sponsor in the room. It makes week 4 real.
+5. **Send `HOMEWORK.md` a week before kickoff.** The answers to Q1, Q3 and Q8
+   tell you before day one whether each person has a workflow that can ship.
 
 ## What you do in each check-in
 

@@ -188,6 +188,12 @@ interrupt:
 4. If I could take one thing off your plate, what would it be?
 ```
 
+If they have ten more minutes, add the two best prompts from `HOMEWORK.md`:
+```
+5. Where does the real information live? Not where it's supposed to.
+6. What's a call you make in four seconds that would take someone new an hour to get wrong?
+```
+
 Type up what they said (no names of members or families) and paste it into
 Claude Code with:
 ```
