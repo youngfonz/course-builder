@@ -352,3 +352,158 @@ work." Experienced people speedrun this in days.
 - **Authority rule:** during this course the agent drafts, decides and logs. It
   never sends, deletes or changes a system of record on its own. A human clicks
   send.
+
+---
+
+## 8. Field research: the 20 most-viewed FDE videos, Mar–Sep 2026
+
+Method: the twenty most-viewed YouTube videos about forward deployed
+engineering published in the six months to 6 Sep 2026, transcribed in full
+(~85,000 words) and cross-tabulated. **A point's weight is how many independent
+sources repeat it.** Section 6 (Nate B Jones) is one of these twenty; the other
+nineteen are new here. Full per-video notes, the recurrence tally and the
+consensus-vs-single-source split live in the companion skill at
+`~/.claude/skills/forward-deployed-engineering/references/source-notes.md`.
+
+Speakers include the people who run these functions: **Kevin Bai** (Anthropic
+applied AI; founding FDE at Rippling, grew it to ~25 in a year; ex-Palantir),
+**Pauline Brunet** (leads FDE globally at Cursor), **Natalie Meurer** (head of
+agent engineering at Sierra; Palantir 2016–2021), **Steven** (deployed engineer,
+LangChain), **Voss** (Verity Agents, ex-Meta), **Tyler** (founding FDE, Retell),
+**Pankaj Jaiswal** (FDE and FDE interviewer, SuperVity), plus one candidate's
+report from fifteen FDE interview loops.
+
+### 8.1 Consensus (15+ of 20 sources)
+
+- Palantir invented the role and was mocked for it; the vindication is
+  commercial, not rhetorical — Palantir's average contract value (~$4M) is more
+  than triple the next public SaaS company (ServiceNow ~$1.2M). *(Kevin Bai)*
+- The role is **consultant + product manager + software engineer in one person**
+  — and specifically the *best* combination of the three, not the average.
+  Someone who is neither a strong communicator nor a strong engineer is not an
+  FDE. *(Voss; Kevin Bai; several roadmaps)*
+- Intelligence is commoditised: every company can buy the same frontier models,
+  so the advantage moved to **where, how and why** they are deployed. This is
+  the one-sentence answer to "why does this job exist."
+
+### 8.2 Heavily repeated (8–14 sources)
+
+- **The documented process is fiction.** Corroborating stories, each from a
+  different source: an agent denied refunds exactly as the written policy said
+  and the company lost long-standing customers — the person who used to do the
+  job had an undocumented rule (*company card → approve without reading*,
+  because arguing over one refund costs the account). Palantir lost a **year**
+  to a file-format migration one engineer kept blocking; nobody could explain
+  why until someone watched her work — she checked data by double-clicking files
+  open, and the new format had nothing to double-click. They gave her that back
+  and she approved the migration in two days. *(AI LABS)*
+- **Evals are the defining technical skill of the era**, and they involve little
+  or no code — which is why a non-engineer can own them first. The deliverable
+  is the failure analysis, not the pass rate. *(near-universal)*
+- **Never force a migration.** Recurring real numbers: a client two years and
+  a couple of million dollars into NetSuite; another five years and $5M into a
+  finance system. Build on top and integrate outward. *(Voss; AI LABS)*
+- **Revenue, risk, cost** — the only three things a business measures. Say which
+  one you moved, with a number. *(Pauline Brunet; several)*
+- Not an entry-level role: ~12% of postings target 0–2 years; 60% want 3–5;
+  about 45% of FDEs arrive from software engineering. *(Marina Wyss)*
+
+### 8.3 The triage that *is* the job (4–7 sources, stated most crisply by AI LABS)
+
+Every step of the mapped workflow gets exactly one of three answers:
+
+| Filter | Answer |
+|---|---|
+| Fixed rule that must be right every time | **Deterministic software** — not AI |
+| Messy input needing a judgment call | **The model** |
+| Expensive when wrong, or a genuine business call | **Stays human** |
+
+Almost no real workflow should be fully AI. In one worked eight-step example:
+four steps ran on their own, three ran with a human checking the output, one
+stayed fully human. *(Voss's version: of ten steps, perhaps three need
+judgment; the rest are if-then-else and API calls.)*
+
+### 8.4 Adoption is a longer project than the build
+
+- OpenAI built a tool for thousands of advisors at one of the world's largest
+  banks: **6–8 weeks of engineering, then four more months of pilots and testing
+  before advisors relied on it.** Roughly 98% ended up using it. Budget more
+  time for trust than for building. *(AI LABS)*
+- **Keep the visible steps.** Hand someone who ran an eleven-step process a
+  one-step version and they stop using it: they used to check the work as they
+  went, and now they are asked to trust an answer that simply appeared. Let the
+  agent work *inside* the steps people already know. *(Voss)*
+- **Nobody buys AI; they buy not getting fired.** Bringing you in is a personal
+  risk to your sponsor — doing nothing is safe, and a failed project lands on
+  them. De-risk it: first pass free, prove one number, make the sponsor
+  promotable. And never call it an *audit* (people hear "tax audit") — call it a
+  **sprint**. *(Voss and Greg Isenberg)*
+- **Establish the baseline before you build.** An executive demanded an agent
+  costing $2,000/day be switched off; it chose which engineer to dispatch to
+  broken equipment, and sending the wrong person cost more than $2,000/day. He
+  agreed instantly once someone did that arithmetic — he had only ever measured
+  the cost. *(Pauline Brunet)*
+
+### 8.5 When FDE is the wrong answer (single-source, attribute if quoted)
+
+- **Kevin Bai's two tests.** (1) You need FDE only when a **technically complex
+  product** meets a **non-technical buyer** — a technical product sold to
+  engineers needs docs and devrel instead. (2) Your FDEs must build on a
+  **platform of shared primitives**; if every engagement starts from scratch,
+  "you do not have an FDE function, you have a dev shop," and maintenance will
+  eat the P&L. FDE is a design partnership scaled up to enterprise.
+- **Pauline Brunet's red flag.** The sentence "we're understaffed, can you just
+  do this" means staff augmentation, not deployment. Her saving question:
+  *"Who on your team will I be working with?"* Also: never sell "two FDEs for
+  six months, do what you like" — keep scope **directional** (the problem and
+  the phases), and define success numerically at scoping time: "if this goes
+  from three hours to twenty minutes, is that a success?"
+- **Natalie Meurer's argument.** FDE "doesn't exist" — the title now covers
+  DevOps, data integration, custom solutions, enablement and agent building, so
+  it means everything and therefore nothing. Her interview question: *"what
+  vintage of FDE are you?"* Her thesis: as code gets cheap and pricing moves to
+  outcomes, product/agent/solutions engineering are all converging on forward
+  deployment.
+
+### 8.6 What the interviews actually test (adds to §5)
+
+From fifteen first-hand loops (Anu Sharma) plus hirers' accounts (Kevin Bai,
+Pankaj Jaiswal, Steven at LangChain, Tech With Tim):
+
+- The **ambiguous case study** has the lowest pass rate (~40%) and the highest
+  weight in the decision. **"There is no right answer, but there is a right way
+  to answer"**: clarify before solving, decompose out loud, sequence by risk and
+  value, and answer in business language rather than engineering language.
+- **Object-oriented Python is back** — 30–50 clean lines, live, in a Google-Doc
+  style editor with no syntax highlighting and no autocomplete. Pseudo-code and
+  whiteboarding are gone.
+- **Take-homes and work trials are common**: clone the repo, fix three issues,
+  record yourself explaining what you did and why. Some companies run 2-day work
+  trials where you demo to a real prospective client.
+- **Agentic system design** is scored as its own discipline (models, evals,
+  LLMOps, harness, MVP → production), as is **AI security** (prompt injection,
+  PII, jailbreaks, failure handling).
+- **Time management is explicitly scored** at LangChain — 30 minutes of slides
+  and 5 of demo fails the round on its own.
+- System design over LeetCode: interviewers look for intuition and scalability
+  thinking, not the optimal solution. *(Pankaj Jaiswal)*
+- Growth ladder, Palantir model: FDE is a **terminal title** (their head of
+  commercial, running a nine-figure business, is titled FDE). Progression is
+  scope — one slice of a customer's problem → one whole customer → an industry
+  → a geography. The mental model: *"you are the CEO of a company with exactly
+  one customer, and the only way to get more is to make that one succeed."*
+  *(Kevin Bai)*
+
+### 8.7 Numbers worth citing (verify before use; September 2026)
+
+- Postings up ~700–1,100% year over year; 100+ companies hiring; New York has
+  overtaken San Francisco as the top city (fintech and regulated industries).
+- Base salaries cluster $150–320K; Palantir median total ~$230K; frontier labs
+  roughly $350–450K mid-level and $600K–$1M+ at staff/principal — but **heavily
+  private-company equity**, and OpenAI and Anthropic route many FDEs through
+  separate deployment companies, so that equity may not be in the lab itself.
+  Treat the million-dollar headline with scepticism. *(Marina Wyss)*
+- Time split, one thousand-posting analysis: roughly 25% writing code, 50%
+  integration and plumbing, 25% meetings and customer hand-holding; 68% of
+  postings require travel. A practising FDE's own estimate: 30% client
+  communication, 70% engineering. *(Marina Wyss; Pankaj Jaiswal)*
