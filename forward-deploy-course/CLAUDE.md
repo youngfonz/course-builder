@@ -156,9 +156,19 @@ sittings rather than rushing.
 - Data rule and authority rule above, in every exercise.
 - Never present the MIT figure as more than "roughly 95% of pilots show no
   measurable business impact (MIT, 2025)".
-- Don't quote salary figures as fact; `SOURCE.md` §4 explains why. The "86
-  trained" figure and the 400,000-session study are the source interview's
-  claims (`SOURCE.md` §6); say "the interview reports" when you use them.
+- Don't quote salary figures as fact; `SOURCE.md` §4 and §8.7 explain why —
+  headline totals are mostly private-company equity, and the labs route many
+  FDEs through separate deployment companies. The "86 trained" figure and the
+  400,000-session study are the source interview's claims (`SOURCE.md` §6); say
+  "the interview reports" when you use them.
+- `SOURCE.md` §8 is field research across the twenty most-viewed FDE videos of
+  Mar–Sep 2026, weighted by how many independent practitioners repeat a point.
+  Use §8.1–8.4 freely (consensus). Attribute §8.5 to the named person — Kevin
+  Bai's platform-or-dev-shop test, Pauline Brunet's staff-augmentation red flag,
+  Natalie Meurer's "FDE doesn't exist" — those are individual positions, not the
+  field's view. When a learner wants a story, prefer a specific one from §8 (the
+  refund agent's company-card rule, the year Palantir lost to a double-click,
+  the $2,000/day agent) over a general claim.
 - Don't let the learner pick a workflow they don't own or that needs a
   migration. Death #2 and death #4 start at setup.
 - If the learner asks you to build something outside the course (a whole new

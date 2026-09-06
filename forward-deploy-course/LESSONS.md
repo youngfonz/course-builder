@@ -234,6 +234,19 @@ Denise's "no form, no first day" rule looks like bureaucracy until you hear
 "2019". If you'd automated past it you'd have shipped something dangerous and
 been proud of it. Discovery is how you find the load-bearing walls.
 
+Two stories from people who skipped this session (`SOURCE.md` §8.2). A company
+put an agent on refund requests. Every refund it denied was one the written
+policy said to deny — and they started losing customers they'd had for years.
+The person who used to do the job had a rule that appeared in no document: if
+the order was paid on a company card, approve it without reading, because
+arguing over one refund costs you the whole account. And Palantir lost a **year**
+to a file-format migration one engineer kept blocking as "worse", with nobody
+able to say why — until someone watched her work. She checked her data by
+double-clicking files open, and the new format had nothing to double-click.
+They gave her that back; she approved the migration two days later. A year of
+deadlock, ended by an hour of watching. Neither rule would ever have come up in
+a meeting.
+
 ### Key Tradeoff
 Asking versus watching. People describe the process they think they follow.
 Watching shows the one they actually follow. When you can only do one, watch.
@@ -306,6 +319,11 @@ Read data/requests.md and data/program_rules.md. For each of the ten requests, g
 ```
 Before you look, pick your own three. Paste both.
 
+Now run the workflow itself through the three filters:
+```
+Go through every step of the enrollment workflow one at a time. For each step give me exactly one of three answers plus one sentence of why: SOFTWARE (a fixed rule that must be right every time), MODEL (messy input needing a judgment call), or HUMAN (expensive when it's wrong, or a genuine business call). Then count them up.
+```
+
 ### What Just Happened
 Requests 2 and 3 (extract the fields, flag the rule-breakers) save most of the
 time with **low authority** and **no migration**. This is **leverage**: the same
@@ -315,6 +333,14 @@ unblocks the work behind it. Request 4 (replace the system)
 and 9 (auto-approve and confirm) are quarter-eaters or hand the AI Denise's
 name. You just **decided where intelligence belongs: the smallest build that
 moves the most work with the least model authority.**
+
+Look at the filter counts. Almost nothing came back all MODEL — and that is the
+right answer. Practitioners describe eight-step workflows where four steps end
+up running on their own, three run with a person checking the output, and one
+stays entirely human (`SOURCE.md` §8.3). Handing the whole workflow to the model
+is the most common way a pilot joins the 95%. A date format is a fixed rule:
+software. Reading a rambling email for what someone actually wants is judgment:
+the model. Deciding to waive a fee has someone's name on it: human, every time.
 
 ### Why It Matters
 The single highest-value thing an FDE does is **kill a requirement** that would
@@ -555,6 +581,14 @@ Death #4 is "no owner after launch". Death #5 is "moves no metric". Your name is
 on this for 90 days and you have a Friday number. That is the entire
 difference between the portal in Session 1 and what you've just done.
 
+**Expect this stretch to take longer than the build did.** When OpenAI shipped a
+tool to thousands of advisors at one of the world's largest banks, the
+engineering took six to eight weeks — and it took four more months of pilots
+before those advisors relied on it. About 98% eventually used it
+(`SOURCE.md` §8.4). Your colleague hesitating over item two is not a setback;
+it is the actual work of this session. Budget more patience for trust than you
+did for building, and do not read slow adoption as a broken tool.
+
 ### Key Tradeoff
 Ship something ugly that works, versus polish for another fortnight. Ugly and
 in someone's hands this week beats beautiful and on your laptop. You can polish
@@ -599,11 +633,22 @@ the number**, built on top of what exists, with a human in charge. Demoing
 through the failures is what makes people trust it; a happy-path demo makes
 them suspicious, and they're right to be.
 
+One number to have ready before you walk in: **what the current way costs.** An
+executive once demanded an agent costing $2,000 a day be switched off. It chose
+which engineer to dispatch to broken equipment; sending the wrong person cost
+more than $2,000 a day. He agreed to keep it the moment someone did that
+arithmetic — he had only ever measured the cost, never the baseline
+(`SOURCE.md` §8.4). Without the before, your win reads as an expense.
+
 ### Why It Matters
 This is also the FDE interview. The signature round is a vague problem and 60
 minutes; what's scored is clarifying before solving, naming what's missing,
 sequencing by risk, proposing the smallest end-to-end version, and surfacing
-failure modes. You have now done every one of those on a real deployment.
+failure modes. It has the lowest pass rate of any round and the highest weight
+in the decision (`SOURCE.md` §8.6): **there is no right answer, but there is a
+right way to answer** — and answering in business language rather than
+engineering language is most of it. You have now done every one of those on a
+real deployment.
 
 ### Key Tradeoff
 Being the hero versus making the sponsor the hero. The second gets you the next
